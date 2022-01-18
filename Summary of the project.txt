@@ -1,0 +1,30 @@
+SUMMARY
+
+PARTNER is an interactive program to help sort ones inventory and help maximize the
+growth of ones business. It is a program utilizing python,HTML and sql to help bring out the
+potential in any business. Utilizing these modern coding languages we can help increase the
+effectiveness of a business by using a program to help reduce the workload of the manager.
+PARTNER is a program that is capable of creating recommendations for the user to help
+in ones endeavors to help in creating a better inventory to increase growth and prosperity of the
+business.
+
+Our solution PARTNER helped Mr. Dave not only to understand the purchase pattern of
+the individual customers but also compare with existing inventory and recommends which item
+to keep on sale and clear it from the inventory. It means PARTNER identifies the list of products
+that are at least demand based on the season and timely changing customer demands. This
+enables him to create some space for procuring the most demanding product and keep it in stock.
+A program is created to manage the inventory for shopkeepers. The program analyzes the
+sales patterns of existing products and generates graphical and statistical summary. The program
+also recommends the products which required to be sold at discounted prices to avoid further
+losses due to the long holding period. Additionally, it also helps the shop keepers in creating
+additional space for the products which are in high demand. Thus this enhances the sales
+revenue.
+
+This is all done using the help of python,HTML and Mysql which are resourceful coding
+languages. Mysql is used to create the inventory and keep track of it while python is used for
+computing and recommending items and displaying graphs to keep track and analyse the sales.
+HTML is used for displaying everything in a graphically appealing format and thus binding the
+entire application together. Using all these various aspects will help the business indefinitely and
+boost the performance and increase sales revenue.
+Due to clear space management in the supermarket, the customer also can pick the
+required products in lesser time which can impact customer satisfaction positively
