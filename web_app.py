@@ -68,12 +68,14 @@ def main():
             bmi = st.number_input("Enter User's BMI",value=25.4)
 
         smoking_status = st.radio("User's Smoking Status?",("Unknown","Formerly Smoked","Never Smoked","Smokes"))
-        
-        #model (XGBoost)
-        prediction_model = xgb.Booster()
-        trained_model = joblib.load('XGBoostTunedModel_v1.6.json')
-        model_accuracy = "94.9%"
+        #Creating nparray of User Inputs
+        user_input = np.array([gender,age,hypertension,heart_disease,ever_married,work_type,Residence_type,avg_glucose_level,bmi,smoking_status]).reshape(1,-1)
+        # Load the XGBoost model
+        trained_model = xgb.Booster()
+        trained_model.load_model('XGBoostTunedModel_v1.6.json')
 
+        # Predict using the loaded model
+        prediction = trained_model.predict(xgb.DMatrix(user_input))
         if st.button("Submit"):
             #Encoding categorical attributes to values
             gender = 1 if gender == 'Male' else 0
