@@ -23,6 +23,14 @@ from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 from xgboost import plot_importance
+import xgboost as xgb
+
+# Load the model using the XGBoost native method
+loaded_model = xgb.Booster()
+loaded_model.load_model('XGBoostTunedModel_v1.6.json')
+
+# Now you can use the loaded_model for prediction
+
 
 #charts
 import plotly.express as px
@@ -62,8 +70,8 @@ def main():
         smoking_status = st.radio("User's Smoking Status?",("Unknown","Formerly Smoked","Never Smoked","Smokes"))
         
         #model (XGBoost)
-        prediction_model = 'XGBoost'
-        trained_model = joblib.load('Models\XGBoostTunedModel_v1.6.json')
+        prediction_model = xgb.Booster()
+        trained_model = joblib.load('XGBoostTunedModel_v1.6.json')
         model_accuracy = "94.9%"
 
         if st.button("Submit"):
